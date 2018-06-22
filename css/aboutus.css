@@ -55,10 +55,10 @@ div.Mainframe
 		position: absolute;
 		top: 50%;
 		left:50%;
-		font-size: 12px;
-		font-family: 'Arial black';
+		font-size: 9px;
+		font-family: 'Arial';
 		text-align: center;
-		color:white;
+		color:black;
 		transform: translate(-50%, -50%);
   		-ms-transform: translate(-50%, -50%);
 		line-height: 15px;
@@ -110,7 +110,7 @@ div.Mainframe
 		width:210px;
 		height:162.5px;
 		backface-visibility: hidden;
-		background-color:white;
+		background-color:black;
 	}
 	div.FlipBack
 	{
@@ -119,6 +119,6 @@ div.Mainframe
 		height: 162.5px;
 		backface-visibility: hidden;
 		transform: rotateX(180deg);
-		background-color:black;
+		background-color:white;
 		text-align: center;
 	}
