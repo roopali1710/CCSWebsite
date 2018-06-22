@@ -9,17 +9,15 @@ div.Mainframe
 		overflow: hidden;
 		width:627px;
 		height:325px;
-		float:left;
-		display:inline;
+		float: left;
 	}
 	div.SecondDiv
 	{
 		overflow: hidden;
 		float:left;
-		position: absolute;
+		position: relative;
 		width:720px;
 		height:325px;
-		display: inline;
 	}
 	image.PicFlip
 	{
@@ -27,8 +25,7 @@ div.Mainframe
 	}
 	image.PicOverlay
 	{
-		overflow: hidden;
-		display: block;
+		transform: scale(1);
 		transition: all 0.8s;
 	}
 	div.PicOverlayContainer
@@ -61,16 +58,17 @@ div.Mainframe
 		font-size: 12px;
 		font-family: 'Arial black';
 		text-align: center;
-		color:black;
+		color:white;
 		transform: translate(-50%, -50%);
   		-ms-transform: translate(-50%, -50%);
 		line-height: 15px;
 	}
-	div.PicOverlayContainer:hover 
+	div.PicOverlayContainer:hover .PicOverlay
 	{
 		-ms-transform: scale(1.1); /* IE 9 */
     	-webkit-transform: scale(1.1); /* Safari */
-  		transform: scale(1.1);
+		transform: scale(1.1);
+		transition: all 0.6s ease-in-out;  
 	}
 	div.PicOverlayContainer:hover div.Overlay 
 	{
@@ -121,7 +119,6 @@ div.Mainframe
 		height: 162.5px;
 		backface-visibility: hidden;
 		transform: rotateX(180deg);
-		background-color: #a6ffff;
-		color:black;
+		background-color:black;
 		text-align: center;
 	}
