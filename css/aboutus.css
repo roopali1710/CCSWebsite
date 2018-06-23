@@ -8,7 +8,7 @@ div.Mainframe
 	{
 		overflow: hidden;
 		width:627px;
-		height:325px;
+		height:324px;
 		float: left;
 	}
 	div.SecondDiv
@@ -17,13 +17,14 @@ div.Mainframe
 		float:left;
 		position: relative;
 		width:630px;
-		height:325px;
+		height:324px;
 	}
-	image.PicFlip
+	img.PicFlip
 	{
-		display: block;
+		height: 100%;
+		width: 100%;
 	}
-	image.PicOverlay
+	img.PicOverlay
 	{
 		transform: scale(1);
 		transition: all 0.8s;
@@ -34,7 +35,7 @@ div.Mainframe
 		position: absolute;
 		overflow: hidden;
 		width:627px;
-		height: 325px;
+		height: 324px;
 		transition: all 0.8s;
 	}
 	p.OverlayText
@@ -53,14 +54,15 @@ div.Mainframe
 	p.FlipText
 	{
 		position: absolute;
-		top: 50%;
-		left:50%;
+		top: 25%;
+		/*left:50%;*/
+		vertical-align: center;
 		font-size: 9px;
 		font-family: 'Arial';
 		text-align: center;
-		color:black;
-		transform: translate(-50%, -50%);
-  		-ms-transform: translate(-50%, -50%);
+		color:white;
+		/*transform: translate(-50%, -50%);
+  		-ms-transform: translate(-50%, -50%);*/
 		line-height: 15px;
 	}
 	div.PicOverlayContainer:hover .PicOverlay
@@ -97,8 +99,7 @@ div.Mainframe
 		transition: all 0.7s ease;
 		float:left;
 		width:210px;
-		height:162.5px;
-		background-color: blue;
+		height:162px;
 	}
 	div.PicFlipContainer1:hover
 	{
@@ -108,17 +109,18 @@ div.Mainframe
 	{
 		position: absolute;
 		width:210px;
-		height:162.5px;
+		height:162px;
 		backface-visibility: hidden;
 		background-color:black;
+		color:white;
 	}
 	div.FlipBack
 	{
-		position: absolute;
+		position: relative;
 		width:210px;
-		height: 162.5px;
+		height: 162px;
 		backface-visibility: hidden;
 		transform: rotateX(180deg);
-		background-color:white;
+		background-color:#00cc99;
 		text-align: center;
 	}
